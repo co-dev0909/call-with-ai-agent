@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Call with AI Agent
 
-## Getting Started
+A voice-interactive web UI built with **Next.js** and **ElevenLabs**, enabling real-time conversations with an ElevenLabs agent. Users can start and stop a session, and visually observe when the agent is speaking or listening through animated button feedback.
 
-First, run the development server:
+- 🔗 GitHub: [github.com/aimaster-dev/call-with-ai-agent](https://github.com/aimaster-dev/call-with-ai-agent)
+- 🌐 Live Demo: [call-with-ai-agent.vercel.app](https://call-with-ai-agent.vercel.app)
+
+---
+
+## 🚀 Features
+
+- 🎙️ Voice input using browser microphone access
+- 🧠 Agent session control using ElevenLabs' SDK
+- 💬 Live status updates for speaking vs listening
+- ✨ Animated visual feedback via Tailwind CSS
+- 🔐 Environment-based agent ID management
+
+---
+
+## 📁 Project Structure
+
+```
+
+.
+├── public/
+├── src/
+│   └── app/
+│       ├── components/
+│       │   └── conversation.tsx      # Core conversation logic and UI
+│       ├── globals.css
+│       ├── layout.tsx
+│       └── page.tsx                  # Root page using <Conversation />
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+
+````
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/aimaster-dev/call-with-ai-agent.git
+cd call-with-ai-agent
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file at the root:
+
+```env
+NEXT_PUBLIC_AGENT_ID=your_elevenlabs_agent_id_here
+```
+
+> ✅ Must begin with `NEXT_PUBLIC_` to be available on the client side.
+
+### 4. Start development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` to view it in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Deployment
 
-## Learn More
+This project is deployed using [Vercel](https://vercel.com/).
 
-To learn more about Next.js, take a look at the following resources:
+### 🔧 Vercel Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Go to your project on Vercel
+2. Navigate to **Settings → Environment Variables**
+3. Add:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+Name: NEXT_PUBLIC_AGENT_ID
+Value: your_agent_id
+Environment: All (Production, Preview, Development)
+```
 
-## Deploy on Vercel
+4. Redeploy the project.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Tech Stack
+
+* **Next.js 15+**
+* **TypeScript**
+* **Tailwind CSS**
+* **@11labs/react**
+* **Vercel (for hosting)**
+
+---
+
+## 🧠 Powered by
+
+[ElevenLabs](https://www.elevenlabs.io/) — Realistic voice AI for conversational experiences.
+
+---
+
+## 📄 License
+
+MIT — free to use, modify, and distribute.
+
+---
