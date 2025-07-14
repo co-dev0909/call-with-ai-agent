@@ -2,7 +2,7 @@
 
 A voice-interactive web UI built with **Next.js** and **ElevenLabs**, enabling real-time conversations with an ElevenLabs agent. Users can start and stop a session, and visually observe when the agent is speaking or listening through animated button feedback.
 
-- 🔗 GitHub: [github.com/aimaster-dev/call-with-ai-agent](https://github.com/aimaster-dev/call-with-ai-agent)
+- 🔗 GitHub: [github.com/co-dev0909/call-with-ai-agent](https://github.com/co-dev0909/call-with-ai-agent)
 - 🌐 Live Demo: [call-with-ai-agent.vercel.app](https://call-with-ai-agent.vercel.app)
 
 ---
@@ -45,7 +45,7 @@ A voice-interactive web UI built with **Next.js** and **ElevenLabs**, enabling r
 ### 1. Clone the project
 
 ```bash
-git clone https://github.com/aimaster-dev/call-with-ai-agent.git
+git clone https://github.com/co-dev0909/call-with-ai-agent.git
 cd call-with-ai-agent
 ````
 
